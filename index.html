@@ -323,6 +323,9 @@ input:checked + .slider:before {
     <input type="button" id="complay2" onclick="gg()">
   </div>
   <script>
+	  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+ 			document.body.style.zoom="150%";
+		}
   flag = 1;
   function a1(){
     var checkBox = document.getElementById('myig');
